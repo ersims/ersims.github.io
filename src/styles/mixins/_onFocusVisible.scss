@@ -1,0 +1,14 @@
+// -------------------
+// Visible focus styles - only when actually focused
+// -------------------
+@mixin onFocusVisible() {
+  &:focus {
+    outline: none;
+  }
+
+  // Add focus styles
+  &[data-focus-visible-added],
+  &:focus-visible {
+    @content;
+  }
+}

@@ -1,0 +1,10 @@
+// -------------------
+// Native hover - e.g. not focus/active
+// -------------------
+@mixin onNativeHover() {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

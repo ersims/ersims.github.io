@@ -1,0 +1,27 @@
+@use "../../styles/mixins/onNativeHover";
+
+.appHeader {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.subtitle {
+  font-size: 0.8em;
+}
+.link {
+  font-size: 0.6em;
+  &,
+  &:active,
+  &:visited,
+  &:focus {
+    color: white;
+  }
+  @include onNativeHover.onNativeHover {
+    color: #5ca6e2;
+  }
+}

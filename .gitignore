@@ -1,0 +1,40 @@
+# Dont store hidden files and directories by default
+.*
+
+# Exceptions
+!.babelrc*
+!.browserslistrc
+!.env.example
+!.eslintrc*
+!.eslintignore
+!.editorconfig
+!.gitattributes
+!.gitignore
+!.gitkeep
+!.npmignore
+!.prettierignore
+!.prettierrc
+!.travis.yml
+!.circleci
+!disabled.gitlab-ci.yml
+!.dependabot
+!.github
+!.dockerignore
+
+# Generated directories
+build
+coverage
+dist
+node_modules
+cdk.out
+cdk.context.json
+
+# Other potentionally conflicting files
+*.db
+*.env
+~*
+*.tmp
+*.log
+npm-debug.log*
+*.lerna_backup
+*.tsbuildinfo
