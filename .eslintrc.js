@@ -42,7 +42,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
     'prettier',
-    'prettier/@typescript-eslint',
   ],
   rules: {
     // Make rules stricter
