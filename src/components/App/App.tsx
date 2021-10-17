@@ -10,6 +10,9 @@ export const App: VoidFunctionComponent = () => (
       <a className={styles.link} href="/pub.key">
         gpg public key
       </a>
+      <a className={styles.link} href="https://github.com/ersims">
+        github.com
+      </a>
     </header>
   </>
 );
