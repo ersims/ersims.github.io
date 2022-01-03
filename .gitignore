@@ -16,10 +16,12 @@
 !.prettierrc
 !.travis.yml
 !.circleci
-!disabled.gitlab-ci.yml
+!.gitlab-ci.yml
 !.dependabot
 !.github
+!.gitlab
 !.dockerignore
+!.mergify.yml
 
 # Generated directories
 build
