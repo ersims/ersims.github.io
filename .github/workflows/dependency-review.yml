@@ -1,8 +1,5 @@
 name: Dependency review
 on:
-  workflow_dispatch:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
   schedule:
