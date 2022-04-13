@@ -13,6 +13,9 @@ export const App: VoidFunctionComponent = () => (
       <a className={styles.link} href="https://github.com/ersims">
         github.com
       </a>
+      <footer className={styles.footer}>
+        {(import.meta.env.VITE_APP_BUILD_ID || 'dev').substring(0, 7)}
+      </footer>
     </header>
   </>
 );
