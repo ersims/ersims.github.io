@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ersims.dev/sitemap.xml

@@ -1,0 +1,5 @@
+# If you find a security issue, please report it responsibly.
+Contact: https://github.com/ersims
+Expires: 2027-06-01T00:00:00.000Z
+Preferred-Languages: en, no
+Canonical: https://ersims.dev/.well-known/security.txt
