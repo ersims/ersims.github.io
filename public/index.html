@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ersims - CTO & Builder of AI-Native Products</title>
+  <meta name="description" content="Fullstack CTO and technical lead building AI-native products. From architecture and infrastructure-as-code to production services and agents. Oslo, Norway.">
+  <meta name="author" content="ersims">
+  <link rel="canonical" href="https://ersims.dev/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ersims.dev/">
+  <meta property="og:title" content="ersims - CTO & Builder of AI-Native Products">
+  <meta property="og:description" content="Fullstack CTO and technical lead building AI-native products. From architecture and infrastructure-as-code to production services and agents.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="ersims.dev">
+  <meta property="og:image" content="https://ersims.dev/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ersims - CTO & Builder of AI-Native Products">
+  <meta name="twitter:description" content="Fullstack CTO and technical lead building AI-native products. From architecture and infrastructure-as-code to production services and agents.">
+  <meta name="twitter:image" content="https://ersims.dev/og.png">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#09090b">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "ersims",
+    "url": "https://ersims.dev",
+    "sameAs": ["https://github.com/ersims", "https://acmedigital.no"],
+    "jobTitle": "CTO & Technical Lead",
+    "worksFor": { "@type": "Organization", "name": "Acme Digital AS" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Oslo", "addressCountry": "NO" },
+    "knowsAbout": ["AI-native products", "TypeScript", "Rust", "Cloud Architecture", "Infrastructure as Code"]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #09090b;
+      color: #fafafa;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Single subtle radial light - static, gives depth */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -40%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 600px;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+
+    /* ---- Name ---- */
+    h1 {
+      font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', 'Cascadia Code', Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+      font-size: clamp(3rem, 8vw, 5rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1;
+      margin-bottom: 2rem;
+      color: #fafafa;
+    }
+
+    .cursor {
+      display: inline-block;
+      width: 3px;
+      height: 0.85em;
+      background: #fafafa;
+      margin-left: 0.05em;
+      vertical-align: baseline;
+      position: relative;
+      top: 0.08em;
+      animation: blink 1s steps(1) infinite;
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    /* ---- Intro ---- */
+    .intro {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: #a1a1aa;
+      max-width: 440px;
+      margin-bottom: 3.5rem;
+    }
+
+    .intro strong {
+      color: #fafafa;
+      font-weight: 500;
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-label {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+      font-size: 0.6875rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #52525b;
+      margin-bottom: 1rem;
+    }
+
+    /* ---- Project links ---- */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .project {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      padding: 1.125rem 0;
+      border-top: 1px solid #18181b;
+      transition: border-color 0.3s ease;
+    }
+
+    .project:last-child {
+      border-bottom: 1px solid #18181b;
+    }
+
+    .project:hover {
+      border-top-color: #27272a;
+    }
+
+    .project:hover + .project {
+      border-top-color: #27272a;
+    }
+
+    .project:last-child:hover {
+      border-bottom-color: #27272a;
+    }
+
+    .project:focus-visible {
+      outline: 1px solid #3f3f46;
+      outline-offset: 8px;
+    }
+
+    .project-name {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fafafa;
+      margin-bottom: 0.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s ease;
+    }
+
+    .project-name .arrow {
+      font-size: 0.875rem;
+      color: #3f3f46;
+      transition: color 0.2s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+
+    .project:hover .project-name .arrow {
+      color: #71717a;
+      transform: translateX(2px);
+    }
+
+    .project-desc {
+      font-size: 0.875rem;
+      color: #52525b;
+      line-height: 1.5;
+      transition: color 0.3s ease;
+    }
+
+    .project:hover .project-desc {
+      color: #71717a;
+    }
+
+    .more {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+      font-size: 0.8125rem;
+      font-style: italic;
+      color: #27272a;
+      margin-top: 1.25rem;
+      letter-spacing: 0.01em;
+    }
+
+    /* ---- Simple links row ---- */
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+      font-size: 0.8125rem;
+      color: #52525b;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .links a:hover {
+      color: #a1a1aa;
+    }
+
+    .links a:focus-visible {
+      outline: 1px solid #3f3f46;
+      outline-offset: 4px;
+    }
+
+    /* ---- Footer ---- */
+    .footer {
+      margin-top: 4rem;
+      font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas, monospace;
+      font-size: 0.6875rem;
+      color: #27272a;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .dot {
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #27272a;
+    }
+
+    /* ---- Load ---- */
+    .page {
+      opacity: 0;
+      animation: enter 0.6s ease 0.1s forwards;
+    }
+
+    @keyframes enter {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 480px) {
+      .page { padding: 3rem 1.25rem; }
+      .links { gap: 1.25rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      .page { opacity: 1; }
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+</head>
+<body>
+  <main class="page">
+    <h1>ersims<span class="cursor" aria-hidden="true"></span></h1>
+
+    <p class="intro">
+      Fullstack CTO &amp; technical lead building <strong>AI&#8209;native products</strong> &mdash;
+      from architecture and infrastructure&#8209;as&#8209;code to production services and&nbsp;agents.
+    </p>
+
+    <div class="section">
+      <p class="section-label">Projects</p>
+      <div class="projects">
+        <a class="project" href="https://env.dev" rel="noopener">
+          <div class="project-name">env.dev <span class="arrow">&rarr;</span></div>
+          <div class="project-desc">Guides, cheatsheets &amp; browser-based dev tools</div>
+        </a>
+        <a class="project" href="https://send.env.dev" rel="noopener">
+          <div class="project-name">send.env.dev <span class="arrow">&rarr;</span></div>
+          <div class="project-desc">Encrypted, self-destructing secret sharing</div>
+        </a>
+      </div>
+      <p class="more">and more...</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">Elsewhere</p>
+      <div class="links">
+        <a href="https://acmedigital.no" rel="noopener">Acme Digital</a>
+        <a href="https://github.com/ersims" rel="noopener noreferrer">GitHub</a>
+        <a href="/pub.key">PGP Key</a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span>Oslo, Norway</span>
+      <span class="dot"></span>
+      <span>Clarity over cleverness</span>
+    </footer>
+  </main>
+</body>
+</html>
